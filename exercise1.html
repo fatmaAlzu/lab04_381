@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4-Exercise 1</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+          let Mynumber = 19;
+          const myconstant = 20;
+            let mystring = "ENSF 381 LAB4";
+
+            console.log("initial Values");
+            console.log("Mynumber: ", Mynumber);
+            console.log("myconstant: ", myconstant);
+            console.log("mystring: ", mystring);
+
+            //changing the value of let
+            Mynumber = 21;
+            console.log("newMynumber", Mynumber);
+            //reassigning the value of const
+            //myconstant = 22;
+            //console.log("newmyconstant", myconstant);
+            //it causes an error because we can't reassign the value of a constant variable
+            
+            //string operations
+            string1 = "Hello, World!";
+            string2 = "JavaScript is fun!";
+            console.log("lengthofstring1", string1.length);
+            console.log("concatenated string", string1+""+string2);
+            console.log("updated string2", string2.replace("fun", "awesome") )
+            //string templates
+            name = "Alice"
+            age = 25
+            let intro = `My name is ${name} and I am ${age} years old.`
+            console.log(intro);
+
+            //Working with dates: 
+
+            let date = new Date();
+            console.log("Current Date:", date);
+            console.log("Current Year:", date.getFullYear());
+            console.log("Month:", date.getMonth()+1);
+            console.log("Day of the month:", date.getDate());
+
+            let dayNumber = date.getDay();
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let dayName = days[dayNumber];
+
+            console.log("Day of the week (number):", dayNumber);
+            console.log("Day of the week (name):", dayName);
+
+
+        
+
+
+
+
+
+        </script>
+    </body>
+</html>
