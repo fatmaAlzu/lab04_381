@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 2</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Step 1: Commenting out the previous functions
+        /*
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num3, num4) {
+            return num3 - num4;
+        }   
+
+        console.log("Addition:", add(5, 3));  
+        console.log("Subtraction:", subtract(10, 4));
+        */
+
+    let add = (num1, num2) => num1 + num2;
+
+    let subtract = (num3, num4) => num3 - num4;
+
+    let multiply = (num5, num6) => num5 * num6;
+
+    let divide = (num7, num8) => num7 / num8;
+
+    console.log("Addition:", add(5, 3));  
+    console.log("Subtraction:", subtract(10, 4));
+    console.log("Multiplication:", multiply(5, 3));
+    console.log("Division:", divide(10, 2));
+
+    
+
+    function calculator(arg1, arg2, callback) {
+            return callback(arg1, arg2);
+        }
+        console.log("Calculate addition:", calculator(5, 3, add)); 
+        console.log("Calculate multiplication:", calculator(5, 3, multiply)); 
+        console.log("Calculate subtraction:", calculator(10, 4, subtract)); 
+        console.log("Calculate division:", calculator(10, 2, divide));  
+    </script>
+</body>
+</html>
